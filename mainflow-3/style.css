@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  color: #0056b3;
+}
+/* Header - Sticky and Compact */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures header stays above everything */
+  background: #3b7ec6;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0; /* Reduced padding for compactness */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar - Sticky Below Header */
+.navbar {
+  position: sticky;
+  top: 40px; /* Adjust to match the header height */
+  z-index: 999; /* Ensures navbar stays above content but below the header */
+  display: flex;
+  justify-content: center;
+  background: #333;
+  padding: 10px 0; /* Compact padding */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar Links */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 0.9rem; /* Slightly smaller font */
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background: #0056b3;
+}
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.product-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.product-item h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-item p {
+  font-size: 1rem;
+  color: #0056b3;
+}
+
+.product-item button {
+  background: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-item button:hover {
+  background: #003d80;
+}
+
+/* About Us Section */
+.about {
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact form input, 
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background-color: #003d80;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .product-item {
+    width: 100%;
+    max-width: 400px;
+  }
+}
