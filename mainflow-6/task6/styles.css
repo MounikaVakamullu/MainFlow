@@ -1,0 +1,321 @@
+/* Basic Reset */
+body, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: ;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #71bbcf; /* Replace with your desired color code */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Background for the home section */
+#home {
+    background-image: url('https://res.cloudinary.com/dwot0ad2w/image/upload/v1736177720/pexels-tobiasbjorkli-2119706_byq85h.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(236, 227, 227); /* Text color */
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+#home p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+/* Footer Styling */
+footer {
+    background-color: #71bbcf;
+    color: rgb(210, 226, 229);
+    text-align: center;
+    padding: 0px;  /* Adjust padding as needed */
+    flex-shrink: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;  /* Ensure the page takes the full height of the viewport */
+    margin: 100;
+}
+
+/* gallery section*/
+
+/* General Gallery Styling */
+
+h3 {
+    text-align: center;
+    color: #333;
+    font-size: 3em; /* Adjust size as needed */
+} 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default: 3 images per row */
+    gap: 20px; /* Add space between the images */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Make sure the images fill their containers */
+.gallery img {
+    width: 250px;
+    height: 250px; /* Set height as you prefer */
+    object-fit: cover; /* Makes sure the images fill the area without distortion */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make first row have 3 items */
+.gallery:nth-of-type(1) {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Make second row have 2 items */
+.gallery:nth-of-type(2) {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* For mobile, show one image per row */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr; /* 1 image per row on small screens */
+    }
+}
+/* Footer Styling */
+footer {
+    background-color: #71bbcf;
+    color: rgb(236, 246, 248);
+    text-align: center;
+    padding: 30px;  /* Adjust padding as needed */
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;  /* Ensure the page takes the full height of the viewport */
+    margin: 0;
+}
+
+
+
+
+/* Contact Section */
+#contact {
+    background-image: url('https://res.cloudinary.com/dwot0ad2w/image/upload/v1736177720/pexels-tobiasbjorkli-2119706_byq85h.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 4em; 
+}
+/* Footer Styling */
+footer {
+    background-color: #71bbcf;
+    color: rgb(236, 246, 248);
+    text-align: center;
+    padding: 30px;  /* Adjust padding as needed */
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;  /* Ensure the page takes the full height of the viewport */
+    margin: 0;
+}
+
+/* Form Styling */
+form {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #a1cde5;
+    border-radius: 8px;
+}
+
+
+
+form div {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"] {
+    width: 150px;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ebe1e1;
+}
+
+/* Phone number block styling */
+.phone-number {
+    font-size: 2.5em; /* Larger font size for the text */
+    font-weight: bold; /* Bold text for emphasis */
+    padding: 120px 140px; /* Increase padding to enlarge the block */
+    background-color: rgba(236, 227, 227, 0.7); /* Optional: Add a semi-transparent background */
+    color: white; /* Ensure good text visibility */
+    border-radius: 100px; /* Round the corners */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4); /* Add a larger shadow for depth */
+    text-align: center; /* Center the text within the block */
+    display: inline-block; /* Ensures the block size adjusts to content */
+    margin: 30px 10; /* Add vertical spacing between the block and other elements */
+    width: 80px; /* Adjust width for a larger block */
+    max-width: none; /* Limit the block size on wider screens */
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: rgb(214, 231, 233);
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Thank You Message */
+#thankYouMessage {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+
+/* Lightbox Styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #71bbcf;
+    color: rgb(228, 235, 237);
+    text-align: center;
+    padding: 20px;  /* Adjust padding as needed */
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;  /* Ensure the page takes the full height of the viewport */
+    margin: 0;
+}
+
